@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Use of npm</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <header class="container p-3">
+        <h1 class="text-center text-info display-1">Learn npm</h1>
+    </header>
+    <main class="container">
+        <section class="row">
+            <section class="col-sm-4 alert alert-info" id="test_box_1">Test Box-1</section>
+            <section class="col-sm-4 alert alert-info" id="test_box_2">Test Box-2</section>
+            <section class="col-sm-4 alert alert-info" id="test_box_3">Test Box-3</section>
+        </section>
+        <section class="row">
+            <section class="col">
+                <button class="btn btn-outline-primary" id="change">Change</button>
+            </section>
+        </section>
+    </main>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#change').click(function(){
+                $('#test_box_1').slideToggle()
+            })
+        })
+    </script>
+</body>
+</html>
